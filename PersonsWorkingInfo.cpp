@@ -16,7 +16,7 @@ static void connectToDatabase()
     if (!writeDir.mkpath("."))
         qFatal("Failed to create writable directory at %s", qPrintable(writeDir.absolutePath()));
     // Ensure that we have a writable location on all devices.
-    const QString fileName = writeDir.absolutePath() + "/VIS-3-Working_Database";
+    const QString fileName = writeDir.absolutePath() + "/Working_Database";
     // When using the SQLite driver, open() will create the SQLite database if it doesn't exist.
     database.setDatabaseName(fileName);
     if (!database.open()) {
