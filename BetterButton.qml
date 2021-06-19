@@ -1,7 +1,8 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.3
 
-Button {
+Button
+{
     id: control
     leftPadding: padding
     topPadding: padding + 5
@@ -11,13 +12,14 @@ Button {
     property alias color: back.color
     property alias border: back.border
     
-    contentItem: Text {
+    contentItem: Text
+    {
         text: control.text
-        font.pixelSize: defpixelSize
-        
+        font.pixelSize: defpixelSize        
     }
     
-    background: Rectangle {
+    background: Rectangle
+    {
         id: back
         radius: 5
     }
