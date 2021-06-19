@@ -19,7 +19,7 @@ public:
 
 private:
     int getMinutsFromWorkingData();
-    std::vector < std::string > m_time_check_vector;
+    std::vector< std::string > m_time_check_vector;
 
 signals:
     void sendMessageToControllerToShowInQML( QString message );
