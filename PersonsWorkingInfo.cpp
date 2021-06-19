@@ -168,3 +168,8 @@ int PersonsWorkingInfo::getMinutsFromWorkingData()
     }
     return working_time_in_minuts;
 }
+
+    std::vector< std::string > PersonsWorkingInfo::GetTimeCheckVector()
+    {
+        return m_time_check_vector;
+    }
