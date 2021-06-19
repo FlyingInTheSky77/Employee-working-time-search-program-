@@ -105,7 +105,7 @@ QString PersonsWorkingInfo::GiveMeWorkingDataByNameAndDate( const QString &name,
     {
         QString test = query.value( 1 ).toString();
         std::string test_in_std = test.toUtf8().constData();
-        if ( name == query.value(1).toString() )
+        if ( name == query.value( 1 ).toString() )
         {
             QString time_check = query.value( 0 ).toString();
             std::string time_in_std = time_check.toUtf8().constData();
