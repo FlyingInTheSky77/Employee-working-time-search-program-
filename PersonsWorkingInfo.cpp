@@ -103,8 +103,6 @@ QString PersonsWorkingInfo::GiveMeWorkingDataByNameAndDate( const QString &name,
     QVector < QString > time_check_QVector;
     while ( query.next() )
     {
-        QString test = query.value( 1 ).toString();
-        std::string test_in_std = test.toUtf8().constData();
         if ( name == query.value( 1 ).toString() )
         {
             QString time_check = query.value( 0 ).toString();
