@@ -113,7 +113,7 @@ QString PersonsWorkingInfo::GiveMeWorkingDataByNameAndDate( const QString &name,
             if ( data == date.toUtf8().constData() )
             {
                 std::string temp = time_in_std.substr( 11, 18 );
-                m_time_check_vector.push_back( temp );//TODO in one line
+                m_time_check_vector.push_back( temp ); // In one line
             }
         }
      }
